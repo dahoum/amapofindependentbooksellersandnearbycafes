@@ -85,42 +85,109 @@
             shadowSize: [41, 41]
             });
 
-            // GERMANY | DARMSTADT
+            // Bookshops and Cafés
+            const bookshops_and_cafes = [
 
-            // Bessunger Buchladen
-            L.marker([49.85888505316302, 8.646698489958522], {icon: goldIcon}).addTo(map)
-                                                                              .bindPopup('<b>Bessunger Buchladen</b><br>Heidelberger Straße 81B, 64285 Darmstadt<br><a href="https://www.bessunger-buchladen.de">www</a>');
+            // DEUTSCHLAND
+            // BENSHEIM
 
-            L.marker([49.857744222441646, 8.650969279601574], {icon: blackIcon}).addTo(map)
-                                                                               .bindPopup('<b>Café Linie 3</b><br>Ludwigshöhstraße 1A, 64285 Darmstadt<br><a href="https://www.instagram.com/cafelinie3/">Instagram</a>');
+            {
+              "name": "Buchhandlung Nuss",
+              "lat": 49.699901951198186,
+              "lng": 8.622301081959852,
+              "address": "Darmstädter Str. 159, 64625 Bensheim",
+              "website": "https://buchhandlung-nuss.buchkatalog.de",
+              "icon": "goldIcon"
+            },
+            
+            // DEUTSCHLAND
+            // DARMSTADT
 
-            // Buchhandlung am Markt
-            // Has problem w/ the website on https://wub-event.de/buchhandlungen/1055
-            L.marker([49.872339225002804, 8.656098318854744], {icon: goldIcon}).addTo(map)
-                                                                              .bindPopup('<b>Buchhandlung am Markt</b><br>Marktplatz 10, 64283 Darmstadt<br><a href="https://www.genialokal.de/buchhandlung/darmstadt/buch-am-markt/">www</a>');
+            {
+              "name": "Bessunger Buchladen",
+              "lat": 49.85888505316302,
+              "lng": 8.646698489958522,
+              "address": "Heidelberger Straße 81B, 64285 Darmstadt",
+              "website": "https://www.bessunger-buchladen.de",
+              "icon": "goldIcon"
+            },
 
-            // Georg Büchner Buchladen
-            // 3 November 2025
-            L.marker([49.87772102994678, 8.658690941103313], {icon: goldIcon}).addTo(map)
-                                                                              .bindPopup('<b>Georg Büchner Buchladen</b><br>Lauteschlägerstraße 18, 64289 Darmstadt<br><a href="https://www.georg-buechner-buchladen.de">www</a>');
+            {
+              "name": "Café Linie 3",
+              "lat": 49.857744222441646,
+              "lng": 8.650969279601574,
+              "address": "Ludwigshöhstraße 1A, 64285 Darmstadt",
+              "website": "https://www.instagram.com/cafelinie3/",
+              "icon": "blackIcon"
+            },
 
-            L.marker([49.87791068888482, 8.659559597401397], {icon: blackIcon}).addTo(map)
-                                                                               .bindPopup('<b>bluebee cafe</b><br>Lauteschlägerstraße 28, 64289 Darmstadt<br><a href="https://www.bluebee.cafe">www</a>');
+            {
+              "name": "Buchhandlung am Markt",
+              "lat": 49.872339225002804,
+              "lng": 8.656098318854744,
+              "address": "Marktplatz 10, 64283 Darmstadt",
+              "website": "https://www.genialokal.de/buchhandlung/darmstadt/buch-am-markt/",
+              "icon": "goldIcon"
+            },
 
-            // Lesezeichen
-            L.marker([49.88164221897697, 8.660268473610591], {icon: goldIcon}).addTo(map)
-                                                                              .bindPopup('<b>Buchhandlung Lesezeichen Darmstadt</b><br>Heinheimer Str. 82, 64289 Darmstadt<br><a href="https://lesezeichen-darmstadt.buchhandlung.de/">www</a>');
+            {
+              "name": "Georg Büchner Buchladen",
+              "lat": 49.87772102994678,
+              "lng": 8.658690941103313,
+              "address": "Lauteschlägerstraße 18, 64289 Darmstadt",
+              "website": "https://www.georg-buechner-buchladen.de",
+              "icon": "goldIcon"
+            },
 
-            L.marker([49.880685865744425, 8.66128312568645], {icon: blackIcon}).addTo(map)
-                                                                               .bindPopup('<b>3klang</b><br>Riegerpl. 3, 64289 Darmstadt<br><a href="https://www.3klang-bar.de">www</a>');
+            {
+              "name": "bluebee cafe",
+              "lat": 49.87791068888482,
+              "lng": 8.659559597401397,
+              "address": "Lauteschlägerstraße 28, 64289 Darmstadt",
+              "website": "https://www.bluebee.cafe",
+              "icon": "blackIcon"
+            },
 
+            {
+              "name": "Buchhandlung Lesezeichen Darmstadt",
+              "lat": 49.88164221897697,
+              "lng": 8.660268473610591,
+              "address": "Heinheimer Str. 82, 64289 Darmstadt",
+              "website": "https://lesezeichen-darmstadt.buchhandlung.de/",
+              "icon": "goldIcon"
+            },
+            {
+              "name": "3klang",
+              "lat": 49.880685865744425,
+              "lng": 8.66128312568645,
+              "address": "Riegerpl. 3, 64289 Darmstadt",
+              "website": "https://www.3klang-bar.de",
+              "icon": "blackIcon"
+            },
 
-            // ÖSTERREICH | WIEN
+            // ÖSTERREICH
+            // WIEN
+            {
+              "name": "Bücher am Spitz",
+              "lat": 48.258105905169415,
+              "lng": 16.39719493449632,
+              "address": "Am Spitz 1, 1210 Wien",
+              "website": "https://www.buecheramspitz.com",
+              "icon": "goldIcon"
+            }
+          ];
 
-            // Bücher am Spitz
-            // 3 November 2025
-            L.marker([48.258105905169415, 16.39719493449632], {icon: goldIcon}).addTo(map)
-                                                                               .bindPopup('<b>Bücher am Spitz</b><br>Am Spitz 1, 1210 Wien<br><a href="https://www.buecheramspitz.com">https://www.buecheramspitz.com</a>');
+          // Create the Markers
+
+          bookshops_and_cafes.forEach(store => {
+            
+            const icon = store.icon === 'goldIcon' ? goldIcon : blackIcon;
+      
+            L.marker([store.lat, store.lng], { icon: icon })
+             .addTo(map)
+             .bindPopup(`<b>${store.name}</b><br>${store.address}<br><a href="${store.website}">www</a>`);
+
+          });
 
         </script>
 
