@@ -75,7 +75,7 @@ bookshops_and_cafes:
 - name: "Steck013"
   lat: 51.55726033872099
   lng: 5.08147958432063
-  address: "Nieuwlandstraat 1, 5038 SL"
+  address: "Nieuwlandstraat 1, 5038 SL Tilburg, Netherlands"
   www: https://www.steck013.nl
   icon: "blackIcon"
   # ADDED 11 NOVEMBER 2025
