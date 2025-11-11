@@ -69,6 +69,17 @@ bookshops_and_cafes:
   www: "https://www.schirner.com/buchhandlungen/partner/deutschland/lichtblick-buchhandlung.html"
   icon: "goldIcon"
 
+## NETHERLANDS
+## TILBURG
+
+- name: "Steck013"
+  lat: 51.55726033872099
+  lng: 5.08147958432063
+  address: "Nieuwlandstraat 1, 5038 SL"
+  www: https://www.steck013.nl
+  icon: "blackIcon"
+  # ADDED 11 NOVEMBER 2025
+
 # ÖSTERREICH
 # WIEN
 
