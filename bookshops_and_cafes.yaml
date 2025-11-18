@@ -48,10 +48,10 @@ bookshops_and_cafes:
   www: "https://www.bluebee.cafe"
   icon: "blackIcon"
 
-- name: "Buchhandlung Lesezeichen Darmstadt"
+- name: "Buchhandlung Lesezeichen"
   lat: 49.88164221897697
   lng: 8.660268473610591
-  address: "Heinheimer Str. 82, 64289 Darmstadt"
+  address: "Heinheimer Straße 82, 64289 Darmstadt"
   www: "https://lesezeichen-darmstadt.buchhandlung.de/"
   icon: "goldIcon"
 
