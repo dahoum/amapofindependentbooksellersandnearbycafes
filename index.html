@@ -142,7 +142,7 @@
             function requestLocation()
             {
 
-                map.locate({setView: false, maxZoom: 18});
+                map.locate({setView: false, maxZoom: 17});
 
                 map.on('locationfound', function(e)
                 {
@@ -167,7 +167,7 @@
                         const bounds = L.latLngBounds([e.latlng, [closestMarker.lat, closestMarker.lng]]);
                         const zoom = map.getBoundsZoom(bounds, { padding: [50, 50] });
                         // Keep center on user's location, only adjust zoom
-                        map.setView(e.latlng, Math.min(zoom, 18));
+                        map.setView(Math.min(zoom, 17));
                  }
              });
 
