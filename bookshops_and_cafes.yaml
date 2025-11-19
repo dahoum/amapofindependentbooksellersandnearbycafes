@@ -81,6 +81,15 @@ bookshops_and_cafes:
   lng: 8.755689
   address: "Wilhelm-Leuschner-Straße 11, 64380 Roßdorf"
   www: "https://www.genialokal.de/buchhandlung/rossdorf/schmoekerstube/"
+  
+# OBER-RAMSTADT
+# 19 NOVEMBER 2025
+
+- name: "Bücher-Blitz"
+  lat: 49.828073
+  lng: 8.746562
+  address: "Hammergasse 5, 64372 Ober-Ramstadt"
+  www: "https://www.buecher-blitz.de"
   icon: "goldIcon"
 
 # DEUTSCHLAND
@@ -93,8 +102,9 @@ bookshops_and_cafes:
   www: "https://www.schirner.com/buchhandlungen/partner/deutschland/lichtblick-buchhandlung.html"
   icon: "goldIcon"
 
-## NETHERLANDS
-## TILBURG
+# NETHERLANDS
+# TILBURG
+# 11 NOVEMBER 2025
 
 - name: "Steck013"
   lat: 51.55726033872099
@@ -102,7 +112,6 @@ bookshops_and_cafes:
   address: "Nieuwlandstraat 1, 5038 SL Tilburg, Netherlands"
   www: "https://www.steck013.nl"
   icon: "blackIcon"
-  # ADDED 11 NOVEMBER 2025
 
 # ÖSTERREICH
 # WIEN
