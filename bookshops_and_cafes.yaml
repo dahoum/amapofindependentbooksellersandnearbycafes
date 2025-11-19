@@ -73,6 +73,17 @@ bookshops_and_cafes:
   icon: "goldIcon"
 
 # DEUTSCHLAND
+# ROßDORF
+# 19 NOVEMBER 2025
+
+- name: "schmökerstube"
+  lat: 49.856920
+  lng: 8.755689
+  address: "Wilhelm-Leuschner-Straße 11, 64380 Roßdorf"
+  www: "https://www.genialokal.de/buchhandlung/rossdorf/schmoekerstube/"
+  icon: "goldIcon"
+
+# DEUTSCHLAND
 # ZWINGENBERG
 
 - name: "Lichtblick Buchhandlung"
