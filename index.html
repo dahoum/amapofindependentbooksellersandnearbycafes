@@ -114,12 +114,12 @@
         <!-- Keep this div right after <body> -->
         <div id="location-warning">
             <p>
-                This website will ask you to access your location in order to position the map so that you can see the nearest bookshops.
+                Diese Website wird Sie bitten, auf Ihren Standort zuzugreifen, um die Karte so zu positionieren, dass Sie die nächstgelegenen Buchhandlungen und Cafés sehen können, in denen man mit einem Buch sitzen kann.
             </p>
-            <button onclick="document.getElementById('location-warning').style.display='none'">I UNDERSTAND</button>
+            <button onclick="document.getElementById('location-warning').style.display='none'">ICH STIMME ZU</button>
             <p>&nbsp;</p>
             <p>    
-                Suggestions? Write to <a href="mailto:map@ijverlag.de">map@ijverlag.de</a>.
+                Suggestions? Schreiben Sie an <a href="mailto:map@ijverlag.de">map@ijverlag.de</a>.
             </p>
         </div>
 
@@ -137,7 +137,7 @@
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | Suggestions? Write to <a href="mailto:map@ijverlag.de">map@ijverlag.de</a>'
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | Suggestions? Schreiben Sie an <a href="mailto:map@ijverlag.de">map@ijverlag.de</a>'
             }).addTo(map);
 
             function requestLocation()
