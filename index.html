@@ -114,7 +114,7 @@
         <!-- Keep this div right after <body> -->
         <div id="location-warning">
             <p><b>Bookshops Around the Corner</b></p>
-            <p>This map will ask you for access to your location in order position your map, so that you can see the nearby bookshops as well as cafés, in which one can sit with a book.</p>
+            <p>This website will ask you for access to your location in order to position the map so, that you can see the nearest bookshop.</p>
             <p>Your location will be only used in your broser to position your map. It will not be sent to the server. No cookies will be used.</p>
             <p>If you do not allow access to your location, the map will be centered on a random Independent Bookseller.</p>
             <button onclick="document.getElementById('location-warning').style.display='none'">I UNDERSTAND</button>
@@ -125,6 +125,8 @@
         <div id="map"></div>
 
         <script>
+
+            let markersLoadedPromise; // We will request location after the markers are loaded.
 
             // const map = L.map('map').setView([49.87772102994678, 8.658690941103313], 13);
 
@@ -157,9 +159,8 @@
 
             document.getElementById('location-warning').querySelector('button').onclick = function()
             {
-
                 document.getElementById('location-warning').style.display = 'none';
-
+                markersLoadedPromise.then(requestLocation); // We request location after the markers are loaded.
             };
 
             // Bookshop
@@ -183,7 +184,7 @@
             });
           
             // Load and parse the Bookshops and the Cafés
-            fetch('bookshops_and_cafes.yaml')
+            markersLoadedPromise = fetch('bookshops_and_cafes.yaml')
                 .then(response => response.text())
                 .then(yamlText => {
                     bookshops_and_cafes = jsyaml.load(yamlText).bookshops_and_cafes;
@@ -193,8 +194,6 @@
                             .addTo(map)
                             .bindPopup(`<b>${marker.name}</b><br>${marker.address}${marker.www ? `<br><a href="${marker.www}" target="_blank" rel="noopener noreferrer">&#8594</a>` : ''}${marker.mail ? `<br><a href="mailto:${marker.mail}">@</a>` : ''}`);
                     });
-
-                    requestLocation(); // Call after all markers are loaded, so that we can choose a random marker in case location is not granted.
                 })
                 .catch(err => console.error("Error loading YAML:", err));
 
