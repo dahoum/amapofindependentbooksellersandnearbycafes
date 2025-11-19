@@ -81,7 +81,8 @@ bookshops_and_cafes:
   lng: 8.755689
   address: "Wilhelm-Leuschner-Straße 11, 64380 Roßdorf"
   www: "https://www.genialokal.de/buchhandlung/rossdorf/schmoekerstube/"
-  
+  icon: "goldIcon"
+
 # OBER-RAMSTADT
 # 19 NOVEMBER 2025
 
